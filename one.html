@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dbms.css">
+
+</head>
+<body onscroll="myFunction()" onscroll="myFunction2()">
+
+
+
+
+
+<div id="fix"><image src="india.png" class="top" width="50%" ><image src="india.png" class="top" width="50%" ></div>
+
+<div id="navbar">
+  <a class="active" href="one.html">Home</a>
+  
+</div>
+
+<div class="header" id="header1">
+  <h1>WELCOME TO INDIAN CITIZEN PORTAL</h1>
+</div>
+
+<script>
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+<h1>LOGIN TO VIEW YOUR INDIAN CITIZEN DETAILS</h1>
+
+
+
+
+<div id ="forming" class="container">
+  <form action="userlogin.php" method="post">
+    <label for="usrname">Indian Citizen Number</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <label for="psw">Password</label>
+    <input type="psw" id="psw" name="psw" >
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+<footer class="text-center">
+  <a class="up-arrow" href="#fix" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>INDIAN CITIZEN PORTAL<a href="https://www.shopiteasyshop.com" title="Visit w3schools"></br>www.indiancitizenportal.com</a></p>
+  <p>THIS IS MY DBMS PROJECT</br></p>  
+</footer>
+</body>
+</html>
